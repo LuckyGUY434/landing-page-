@@ -1,2 +1,2 @@
 # landing-page-
-using new gained knowledge to make complex web 
+using newly gained knowledge to make simple web 
