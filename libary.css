@@ -1,0 +1,172 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 100px 1fr;
+}
+
+.main-title{
+    grid-column: 1 / 3;
+    background-color:#36454F;
+}
+
+.main-title{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); 
+
+
+}
+.main-title > h1{
+    color: white;
+}
+
+.side-bar{
+    display: grid;
+    grid-template-rows: 120px 4fr;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+.side-bar > button{
+    background-color: #36454F;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.libary{
+    background-color: white;
+}
+
+.user-input{
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+    width: 500px;
+    height: 500px;
+    top: 20%;
+    left: 35%;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #36454F;
+    display: none;
+}
+
+.user-input > h2 {
+    display: grid;
+    align-self: flex-start;
+    justify-content: center;
+    color: white;
+    margin-top: 0px;
+}
+
+#title,
+#author,
+#pages{
+    display: grid;
+    width: 75%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.checkbox-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#read{
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+}
+
+#myCheckbox{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.book-submit{
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    border:none;
+    justify-self: center;
+    cursor: pointer;
+}
+
+#exit-button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.libary{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: repeat(auto-fill, 265px);
+    gap: 20px;
+}
+
+.libary > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 320px;
+    height: 250px;
+    margin-top: 30px;
+    background-color: whitesmoke;
+}
+
+#card-header{
+    display: flex;
+    justify-content: center;
+
+}
+
+#read-content, 
+#author-content, 
+#pages-content{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+#remove-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 70px;
+
+}
+
